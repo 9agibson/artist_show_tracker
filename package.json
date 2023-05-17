@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install-dependencies": "npm run install-music-map && npm install",
+    "setup-production": "npm run install-music-map && npm run build-music-map && npm install",
+    "install-music-map": "cd music-map && npm install",
+    "build-music-map": "cd music-map && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
