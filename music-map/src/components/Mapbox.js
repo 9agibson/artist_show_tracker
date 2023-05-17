@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Map, {Marker, Popup} from 'react-map-gl'
 import {FaMapMarkerAlt} from 'react-icons/fa'
-import {AiOutlineCloseSquare} from 'react-icons/ai'
+
 import axios from 'axios'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './mapbox.css'
@@ -16,7 +16,7 @@ const Mapbox = () => {
   const [pins, setPins] = useState([])
   const [currentPlaceId, setCurrentPlaceId] = useState(null)
   const [name, setName] = useState('')
-  const [shows, setShows] = useState('upcoming')
+  const shows = 'upcoming'
   const [alert, setAlert] = useState(false)
   const [viewport, setViewport] = useState({
     latitude: 37.0902,
@@ -32,8 +32,7 @@ const Mapbox = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const newName = name.split(' ').join('%20')
-    console.log(newName)
-    console.log(shows)
+    
     setName(newName)
     
     const getPins = async () => {

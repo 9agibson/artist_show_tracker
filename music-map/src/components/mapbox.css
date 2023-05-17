@@ -26,19 +26,15 @@ form {
 input{
     border: none;
     border-bottom: 1px solid gray;
-    background: var(--color-bg-variant)
+    background: var(--color-bg-variant);
+    font-size: 18px;
+    color: rgb(148, 148, 148);
 }
 input::placeholder, textarea::placeholder {
-    font-size: 12px;
+    font-size: 18px;
     color: rgb(148, 148, 148);
 }
-select{
-    border: none;
-    border-bottom: 1px solid gray;
-    background: var(--color-bg-variant);
-    font-size: 12px;
-    color: rgb(148, 148, 148);
-}
+
 
 .popup {
     width: 250px;
