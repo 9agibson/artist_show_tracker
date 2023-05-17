@@ -1,0 +1,92 @@
+.map__container {
+    display: flex;
+    flex-direction: column;
+    width: var(--container-width-lg);
+    justify-content: center;
+    text-align: center;
+}
+
+
+.map__container > div {
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    background: var(--color-bg-variant)
+}
+input::placeholder, textarea::placeholder {
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+}
+select{
+    border: none;
+    border-bottom: 1px solid gray;
+    background: var(--color-bg-variant);
+    font-size: 12px;
+    color: rgb(148, 148, 148);
+}
+
+.popup {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    font-size: 16px;
+    
+}
+label {
+    color: var(--color-primary);
+    border-bottom: .5px solid var(--color-bg-variant);
+    width: max-content;
+    margin: 3px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.popup h4 {
+    color: var(--color-bg)
+}
+.popup p {
+    color: var(--color-bg)
+}
+
+.copyright {
+    left: 45%;
+    bottom: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.alert {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 4rem;
+    padding: 5px;
+    box-shadow: 10px 5px 5px rgb(63, 63, 63);
+}
