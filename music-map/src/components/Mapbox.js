@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Map, {Marker, Popup} from 'react-map-gl'
 import {FaMapMarkerAlt} from 'react-icons/fa'
-
+import moment from "moment"
 import axios from 'axios'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './mapbox.css'
@@ -101,6 +101,8 @@ const Mapbox = () => {
           <label>Location</label>
           <p>{p.venue.street_address}</p>
           <p>{p.venue.city + " " + p.venue.region}</p>
+          <label>Date</label>
+          <p>{moment(p.datetime).utc().format('MM-DD-YYYY')}</p>
         </div>
       </Popup>
       )} 
